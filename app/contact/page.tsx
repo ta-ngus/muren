@@ -19,7 +19,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`
     );
-    window.location.href = `mailto:info@muren.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:tanguscherono284@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
