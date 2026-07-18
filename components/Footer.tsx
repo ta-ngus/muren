@@ -1,10 +1,15 @@
+import Spotlight from "@/components/Spotlight";
+
 export default function Footer() {
   return (
-    <footer className="w-full bg-navy text-white mt-20">
-      <div className="max-w-6xl mx-auto px-6 py-12 grid gap-8 md:grid-cols-3">
+    <Spotlight className="w-full overflow-hidden bg-navy text-white mt-20">
+      <div className="absolute -bottom-16 right-10 w-64 h-64 bg-teal/20 rounded-full glow-orb" />
+      <div className="relative max-w-6xl mx-auto px-6 py-12 grid gap-8 md:grid-cols-3">
         <div>
-          <h3 className="text-lg font-bold mb-2">MUREN</h3>
-          <p className="text-sm text-white/70">
+          <h3 className="text-lg font-semibold font-[family-name:var(--font-display)]">
+            MUREN
+          </h3>
+          <p className="text-sm text-white/70 mt-2">
             Intelligent solutions. Real impact.
           </p>
         </div>
@@ -28,9 +33,9 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 text-center text-xs text-white/50 py-4">
+      <div className="relative border-t border-white/10 text-center text-xs text-white/50 py-4">
         © {new Date().getFullYear()} Muren. All rights reserved.
       </div>
-    </footer>
+    </Spotlight>
   );
 }
