@@ -30,12 +30,16 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
-          <Image src="/logo.png" alt="Muren logo" width={38} height={38} />
-          <span className="text-xl font-semibold tracking-tight text-navy font-[family-name:var(--font-display)]">
-            MUREN
-          </span>
-        </Link>
+        <Link href="/" className="flex items-center group">
+  <Image
+    src="/logo.png"
+    alt="Muren"
+    width={160}
+    height={107}
+    className="h-12 w-auto"
+    priority
+  />
+</Link>
 
         <nav className="hidden md:flex gap-8">
           {links.map((link) => (
